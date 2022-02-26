@@ -3,8 +3,8 @@ const fs = require("fs");
 
 //Credenciales
 const s3 = new AWS.S3({
-  accessKeyId: "AKIAWKPXIJIUIYRXXTN6",
-  secretAccessKey: "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",
+  accessKeyId: "accessKeyId",
+  secretAccessKey: "secretAccessKey",
 });
 
 //Obtener una lista de los Buckets
@@ -15,7 +15,7 @@ const s3 = new AWS.S3({
 
 //Obtener una lista de Objetos
 // var params = {
-//   Bucket: "bucket-example-relikedd",
+//   Bucket: "bucket-example",
 //   MaxKeys: 2,
 // };
 // s3.listObjectsV2(params, function (err, data) {
@@ -25,7 +25,7 @@ const s3 = new AWS.S3({
 
 //Descargar un objeto
 // var params = {
-//     Bucket: "bucket-example-relikedd",
+//     Bucket: "bucket-example",
 //     Key: "earth-1756274.jpg"
 //    };
 //    s3.getObject(params, function(err, data) {
@@ -51,7 +51,6 @@ const s3 = new AWS.S3({
 
 //   s3.putObject(params, function (err, data) {
 //     if (err) console.log(err, err.stack);
-//     // an error occurred
 //     else console.log(data); // successful response
 //   });
 // });
